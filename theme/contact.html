@@ -122,7 +122,7 @@
         <div class="columns is-multiline">
             <div class="column is-8-desktop">
                 
-                <form action="https://formspree.io/f/mwkdjnrg" id="contact-form" class="contact__form" method="POST" >
+               <form action="https://formspree.io/f/mwkdjnrg" id="contact-form" class="contact__form" method="POST" >
                  <!-- form message -->
                     <div class="columns is-multiline">
                         <div class="column is-12">
@@ -131,7 +131,7 @@
                                 Your message was sent successfully.
                             </div>
 
-                            <select class="input" id="exampleFormControlSelect1">
+                            <select class="input" id="exampleFormControlSelect1" autocomplete="on">
                                 <option>J'ai besoin d'aide pour ...</option>
                                 <option>Conception de logiciels</option>
                                 <option>Cycle de développement</option>
@@ -142,22 +142,25 @@
                             
                             </select>
                         </div>
+
+                        
                         <div class="column is-12">
-                            <input name="subject" id="subject" type="text" class="input" placeholder="Your Subject">
+                            <input name="subject" id="subject" type="text" class="input" placeholder="Your Subject" autocomplete="on">
                         </div>
                         <div class="column is-12">
-                            <input name="name" id="name" type="text" class="input" placeholder="Your Name">
+                            <input name="name" id="name" type="text" class="input" placeholder="Your Name" autocomplete="on">
                         </div>
                         <div class="column is-12">
-                            <input name="email" id="email" type="email" class="input" placeholder="Email Address">
+                            <input name="email" id="email" type="email" class="input" placeholder="Email Address" autocomplete="on">
                         </div>
                         <div class="column is-12">
-                            <textarea name="message" id="message" class="input" placeholder="Your Message"></textarea>
+                            <textarea name="message" id="message" class="input" placeholder="Your Message" autocomplete="on"></textarea>
                         </div>
                         <div class="column is-12">
                             <button class="btn btn-main" name="submit" type="submit">Envoyer un message</button>
                         </div>
                     </div>
+                    
                   
                 </form>
             </div>
@@ -194,13 +197,7 @@
             </div>
         </div>
 
-         <div class="columns is-multiline">
-            <div class="column is-12">
-                 <div class="google-map mt-90 mb-6">
-                    <div id="map"></div>
-                </div>
-            </div>
-        </div>
+         
 
         
     </div>
