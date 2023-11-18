@@ -114,51 +114,73 @@
     <div class="container">
         <div class="columns is-multiline">
             <div class="column is-12">
-                <span class="text-color">Envoyer un message</span>
-                <h3 class="text-md mb-5">Contact Form</h3>
+                <span class="text-color"></span>
+                <h3 class="text-md mb-5">Formulaire de contact</h3>
             </div>
         </div>
 
         <div class="columns is-multiline">
             <div class="column is-8-desktop">
                 
-               <form action="https://formspree.io/f/mwkdjnrg" id="contact-form" class="contact__form" method="POST" >
+               <form action="https://formspree.io/f/mwkdjnrg"  method="POST" >
                  <!-- form message -->
                     <div class="columns is-multiline">
                         <div class="column is-12">
-
-                            <div class="notification is-success contact__msg mb-4" style="display:none" role="alert">
-                                Your message was sent successfully.
-                            </div>
-
-                            <select class="input" id="exampleFormControlSelect1" autocomplete="on">
-                                <option>J'ai besoin d'aide pour ...</option>
-                                <option>Conception de logiciels</option>
-                                <option>Cycle de développement</option>
-                                <option>Développement de logiciels</option>
-                                <option>Maintenance</option>
-                                <option>Etude statistique</option>
-                                <option>Coût et durée</option>
                             
-                            </select>
-                        </div>
+                            <div>
+                                <label> Votre demande pour </label>
+                                <select class="input" id="exampleFormControlSelect1" autocomplete="on">
+                                    <option>J'ai besoin d'aide pour ...</option>
+                                    <option>Conception de logiciels</option>
+                                    <option>Cycle de développement</option>
+                                    <option>Développement de logiciels</option>
+                                    <option>Maintenance</option>
+                                    <option>Etude statistique</option>
+                                    <option>Coût et durée</option>
+                                
+                                </select>
+                            </div>
+                            
+                            
 
+                            <div>
+                                <label>Votre Nom</label>
+                                <div class="column is-12">
+                                    <input name="name" id="name" type="text" class="input" placeholder="Votre Nom">
+                                </div>
+
+
+                            </div>
+                                        
+                                <div>
+                                    
+                                    <label>Votre email:</label>
+                                        <div class="column is-12">
+                                            
+                                            <input type="email" name="email" placeholder="Your email" class="input">
+                                        </div>
+                                    
+        
+                                </div>
+                                
+                                <div>
+                                    <label> Votre message  </label>
+                                    <div class="column is-12">
+                                        <textarea name="message" id="message" class="input" placeholder="Votre Message"></textarea>
+                                    </div>
+                                
+                                </div>
+                                <div class="column is-12">
+                                    <button class="btn btn-main" name="submit" type="submit">Send Message</button>
+                                </div>
+
+
+
+                        </div>
                         
-                        <div class="column is-12">
-                            <input name="subject" id="subject" type="text" class="input" placeholder="Your Subject" autocomplete="on">
-                        </div>
-                        <div class="column is-12">
-                            <input name="name" id="name" type="text" class="input" placeholder="Your Name" autocomplete="on">
-                        </div>
-                        <div class="column is-12">
-                            <input name="email" id="email" type="email" class="input" placeholder="Email Address" autocomplete="on">
-                        </div>
-                        <div class="column is-12">
-                            <textarea name="message" id="message" class="input" placeholder="Your Message" autocomplete="on"></textarea>
-                        </div>
-                        <div class="column is-12">
-                            <button class="btn btn-main" name="submit" type="submit">Envoyer un message</button>
-                        </div>
+                                  
+                          
+
                     </div>
                     
                   
